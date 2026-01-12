@@ -1,0 +1,57 @@
+.container {
+  width: 500px;
+  border: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+}
+
+.header {
+  text-align: center;
+  color: blue;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+.controls {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.form-select {
+  padding: 5px;
+}
+
+button {
+  margin-left: 10px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.result-box {
+  padding: 10px;
+}
+
+.result-title {
+  text-align: center;
+  color: blue;
+  margin: 0 0 10px 0;
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+.result-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.red-text {
+  color: #a00;
+}
