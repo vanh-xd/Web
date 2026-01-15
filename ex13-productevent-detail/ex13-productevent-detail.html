@@ -1,0 +1,21 @@
+<p>ex13-productevent-detail works!</p>
+<button (click)="go_back()">Go Back</button> 
+<table> 
+    <tr> 
+        <td>ID:</td> 
+        <td>{{selected_product.ProductId}}</td> 
+    </tr> 
+    <tr> 
+        <td>Name:</td> 
+        <td>{{selected_product.ProductName}}</td> 
+    </tr> 
+    <tr> 
+        <td>Price:</td> 
+        <td>{{selected_product.Price}}</td> 
+    </tr> 
+    <tr> 
+        <td colspan="2"> 
+            <img [src]="selected_product.Image"/> 
+        </td>         
+    </tr> 
+</table> 
