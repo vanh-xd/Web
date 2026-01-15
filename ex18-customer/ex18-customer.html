@@ -1,0 +1,29 @@
+<p>ex18-customer works!</p>
+<table border="1" *ngFor="let ct of customerTypes">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>AGE</th>
+            <th>IMAGE</th>
+        </tr>
+        <tr>
+            <th colspan="5">
+                {{ct.CustomerTypeId}} - {{ct.CustomterTypeName}}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr *ngFor="let c of ct.Customers">
+                <td>{{c.Id}}</td>
+                <td>{{c.Name}}</td>
+                <td>{{c.Email}}</td>
+                <td>{{c.Age}}</td>
+                <td>
+                    <img width="150" height="150" src="{{c.Image}}"/>
+                </td>
+            </tr>
+
+    </tbody>
+</table>
