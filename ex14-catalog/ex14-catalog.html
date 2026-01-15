@@ -1,0 +1,29 @@
+<table border="1" *ngFor="let c of categories">
+    <caption *ngIf="c.Cateid === 'cate1'">PRODUCT CATALOG</caption>
+    <thead>
+        <tr>
+            <th colspan="2">Ma Danh Muc</th>
+            <th colspan="2">Ten Danh Muc</th>
+        </tr>
+        <tr *ngIf="c.Cateid === 'cate1'">
+            <th colspan="2">{{c.Cateid}}</th>
+            <th colspan="2">{{c.CateName}}</th>
+        </tr>
+        <tr>
+            <th>Ma San Pham</th>
+            <th>Ten San Pham</th>
+            <th>Gia San Pham</th>
+            <th>Picture</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of c.Products">
+            <td>{{p.ProductId}}</td>
+            <td>{{p.ProductName}}</td>
+            <td>{{p.Price}}</td>
+            <td>
+                <img width="100" height="100" src="{{p.Image}}"/>
+            </td>
+        </tr>
+    </tbody>
+</table>
